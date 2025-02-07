@@ -1,0 +1,12 @@
+/* Correct usage of calc() */
+#element {
+  width: calc(100% - 10px);
+  height: calc(50vh + 20px);
+  margin: calc(10px + 5%); /* Spaces are crucial around operators */
+}
+
+/* Incorrect usage with missing unit or space */
+#incorrect-element {
+  /*width: calc(100% - 10);*/ /* Missing unit */
+  /*height:calc(50vh+20px);*/ /* Missing spaces */
+} 
